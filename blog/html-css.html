@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories and Legends (PAGE title)</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="logo-title-container">
+      <div class="blog-logo">
+        <!-- blog logo -->
+        <img
+          src="https://scontent.fakl2-1.fna.fbcdn.net/v/t39.30808-6/245188494_4396300473789544_8012918098544143306_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=2rIp72ykTTgAX8t69zA&_nc_ht=scontent.fakl2-1.fna&oh=00_AfDessmz5ZqYDcx08IyDzcTktZpWoyntGM0nB2LKdnNt6A&oe=64960DB0"
+        />
+      </div>
+      <div>
+        <!-- blog Title -->
+        <div class="blog-title">
+          <h1>Rodolfo's log of things</h1>
+        </div>
+      </div>
+    </div>
+    <div class="blog-menu">
+      <!-- blog Menu -->
+      <span>Home</span>
+      <span>About</span>
+      <span
+        >Categories
+        <!-- <ul>
+          <li>Category 1</li>
+          <li>Category 2</li>
+          <li>Category 3</li>
+        </ul> -->
+      </span>
+      <span class="subscribe-right">Subscribe</span>
+    </div>
+    <h2>
+      What are the differences between relative, absolute, and fixed
+      positioning?
+    </h2>
+    <!-- Source: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/ -->
+    <h3>Position: relative</h3>
+    <p>
+      If the position is set to <b>relative</b>, you should give some more
+      positioning attributes (top, right, bottom, left), otherwise it would have
+      <b>no effect at all!</b>
+    </p>
+    <p>
+      For example, if the position is set to <b>relative</b> AND we also add a
+      <i>top: 10px</i>, it will shift the position 10px down from where it would
+      normally be. And that is awesome! We can fix positioning between things
+      using this CSS method.
+    </p>
+    <h3>Position: absolute</h3>
+    <p>
+      If the position is set to <b>absolute</b>, the element gets out of the
+      flow of the page and can overlap other elements. It is as if it does not
+      have limits. You can add top, right, bottom and left attributes to place
+      this element wherever you want in the page.
+    </p>
+    <p>
+      An element with <i>position: absolute</i>; is positioned relative to the
+      nearest positioned ancestor. But, if there is no parent/ancestor, it will
+      use the document body, and moves along with the page scrolling. There is a
+      very useful YouTube video
+      <a href="https://www.youtube.com/watch?v=P6UgYq3J3Qs">here</a> that shows
+      how it works.
+    </p>
+
+    <h3>Position: fixed</h3>
+    <p>
+      If the position is set to <b>fixed</b>, the element is fixed relative to
+      the <i>viewport</i>, or the browser window. When a fixed positioned object
+      is in the page, it will be there even when the screen is scrolled. It can
+      be very useful if you want a menu to be visible at all times.
+    </p>
+
+    <div class="links-to-pages">
+      Links to follow -
+      <a href="../index.html">Back to Main page</a>
+    </div>
+  </body>
+</html>
