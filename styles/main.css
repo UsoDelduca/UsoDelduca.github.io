@@ -1,9 +1,38 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: azure;
-  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  /* min-height: 100vh; */
+  height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+nav {
+  background-color: #f1f1f1;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: black;
+  height: 50px;
+
+  /* position: absolute; */
+  /* @media (min-width: 600px) {
+    padding: 10px;
+  } */
+}
+a {
+  /* position: absolute; */
+  text-decoration: none;
+  color: black;
 }
 
 .logo-title-container {
@@ -13,14 +42,14 @@ body {
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 400px) {
+/* @media (min-width: 400px) {
   .flex-container {
     flex-direction: column;
   }
   .blog-menu {
     flex-direction: column;
   }
-}
+} */
 
 img {
   width: 50px;
@@ -32,24 +61,36 @@ img {
   font-family: fantasy;
 }
 
-.blog-menu {
+/* .blog-menu {
   border-top: solid;
   border-bottom: solid;
   border-color: black;
   height: 50px;
   display: flex;
+} */
+
+.blog-menu > ul {
+  /*creates the menu contaier*/
+  background-color: #f1f1f1;
+
+  margin: 0px;
+
+  padding: 0px;
+  font-size: 16px;
+  list-style-type: none;
+  font-family: fantasy;
+  position: absolute;
+  display: flex;
+  align-items: center;
 }
 
-.blog-menu > span {
-  background-color: #f1f1f1;
-  margin: 0px;
-  padding: 15px;
-  font-size: 16px;
-  font-family: fantasy;
+.blog-menu > ul > li {
+  /*creates a space between list items*/
+  margin-right: 5px;
 }
 
 /* .subscribe-right {
-  text-align: right;
+  justify-content: flex-end;
 } */
 
 .post-image-1 {
@@ -68,15 +109,18 @@ img {
   border-color: black;
   height: 50px;
   display: flex;
+  margin-top: 10px;
 }
 
 .links-to-pages > a {
   background-color: #f1f1f1;
+
   margin: 0px;
   padding: 15px;
   padding-left: 5px;
   font-size: 16px;
   font-family: fantasy;
+  text-decoration: none;
 }
 
 p,
