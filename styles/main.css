@@ -143,8 +143,9 @@ p {
 }
 
 .comparison-block {
-  border: solid;
+  border: 1px solid;
   border-radius: 9px;
+  box-shadow: 5px 5px 0 #535050;
   vertical-align: baseline;
   flex-basis: 50%;
   margin: 0 0.55rem;
@@ -157,7 +158,7 @@ p {
 }
 
 .comparison-list {
-  list-style-type: square;
+  list-style-type: disc;
 }
 
 .eq-iq-link {
