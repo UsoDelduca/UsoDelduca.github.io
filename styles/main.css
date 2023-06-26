@@ -130,9 +130,37 @@ img {
 }
 
 p,
-h2 {
+h2,
+h3 {
   max-width: 800px;
 }
 p {
   text-align: justify;
+}
+
+.comparison-eq-iq {
+  display: flex;
+}
+
+.comparison-block {
+  border: solid;
+  border-radius: 9px;
+  vertical-align: baseline;
+  flex-basis: 50%;
+  margin: 0 0.55rem;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.comparison-block-eq,
+.comparison-block-iq {
+  font-weight: bold;
+}
+
+.comparison-list {
+  list-style-type: square;
+}
+
+.eq-iq-link {
+  text-decoration: underline;
+  color: blue;
 }
