@@ -70,6 +70,7 @@
         &lt;/html&gt;
         </code>
       </pre>
+      </div>
       <p>The &lt;html&gt; tag is the root of the tree, and it has child elements such as &lt;head&gt; and &lt;body&gt;. Then, the &lt;body&gt; element has other child elements like &lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, and &lt;button&gt;. Each of these elements is a “node” in the DOM.</p>
       <img src="./images/DOM example.png" class="dom-tree-example">
       <p>Programmers use JavaScript to manipulate those “nodes” inside the DOM, changing their content, modifying their attributes, adding or removing elements dynamically, and responding to user interaction such as clicks or form submissions.</p>
@@ -91,6 +92,48 @@
         <p>If a website was a recipe, HTML and CSS would be the ingredients and their flavours. JavaScript would be the instructions, so your recipe can be repeated over and over, and still have the same outcome.</p>
         <p>If a website was a sports team, HTML and CSS would be the players and their different positions in the playing field. JavaScript would be the coach that will organise, strategise, and guide players through a match so they can achieve their goals.</p.>
         
+        <h3>Control flow and Loops in JavaScript</h3>
+        <p>JavaScript works in a specific order and things have to be coded (written) in a way that the computer will understand and execute the lines of code the way we wanted. The code in JavaScript is run from the first line in the file to the last line. But we can control this workflow and, to change this flow, we can use conditionals and loops.</p>
+        <p>For example,  we can use JavaScript to calculate the total price of a shopping cart, creating a loop that goes through every element, takes their individual prices, and sums everything.</p>
+        <pre class="code-block"> 
+        <code>
+          // Define the function
+          function calculateTotalPrice(items) {
+            let totalPrice = 0;
+  
+          // Loop through each item in the shopping cart
+          for (let i = 0; i < items.length; i++) {
+            // Get the price of the current item
+            let itemPrice = items[i].price;
+            
+            // Add the price to the total
+            totalPrice += itemPrice;
+          }
+  
+            // Return the total price
+            return totalPrice;
+          }
+
+
+          // Create an array of items in the shopping cart
+          const cartItems = [
+            { name: 'Shirt', price: 20 },
+            { name: 'Pants', price: 30 },
+            { name: 'Shoes', price: 50 }
+          ];
+
+
+          // Call the calculateTotalPrice function with the cart items
+          const total = calculateTotalPrice(cartItems);
+
+
+          // Print the total price
+          console.log('Total price:', total);
+
+         </code>
+        </pre>
+        
+
     </div>
 
     <div class="links-to-pages">
