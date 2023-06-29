@@ -61,6 +61,11 @@ img {
   margin-right: 10px;
 }
 
+.dom-tree-example {
+  width: 100%;
+  border-radius: 0;
+}
+
 .blog-title > h1 {
   font-family: fantasy;
   font-size: 7vw;
@@ -164,4 +169,11 @@ p {
 .eq-iq-link {
   text-decoration: underline;
   color: blue;
+}
+
+.code-block {
+  background-color: #f1f1f1;
+  border: 1px solid;
+  border-radius: 9px;
+  box-shadow: 5px 5px 0 #535050;
 }
