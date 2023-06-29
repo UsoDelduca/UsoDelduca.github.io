@@ -179,3 +179,9 @@ p {
   box-shadow: 5px 5px 0 #535050;
   max-width: 800px;
 }
+
+.test-button1,
+.test-button2 {
+  display: flex;
+  margin: 3px;
+}
