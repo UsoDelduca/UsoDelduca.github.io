@@ -185,3 +185,12 @@ p {
   display: flex;
   margin: 3px;
 }
+
+.function-list {
+  max-width: 800px;
+  margin-right: 27px;
+}
+
+.function-list > li {
+  padding-bottom: 5px;
+}
