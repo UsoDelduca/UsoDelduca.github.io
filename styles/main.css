@@ -141,6 +141,7 @@ h3 {
 }
 p {
   text-align: justify;
+  padding: 10px;
 }
 
 .comparison-eq-iq {
@@ -176,4 +177,5 @@ p {
   border: 1px solid;
   border-radius: 9px;
   box-shadow: 5px 5px 0 #535050;
+  max-width: 800px;
 }

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
   </head>
+  
 
   <body>
     <div class="logo-title-container">
@@ -45,6 +46,7 @@
     <div class="javascript-dom">
       <h2>JavaScript DOM</h2>
       <h3>What is the DOM?</h3>
+      <p>In simple terms, the DOM is a bunch of little packages that are organised in a way so that a computer can understand what is there. It represents a webpage in objects (little boxes) and programmers can use computer languages to manipulate those objects. </p>
       <p>The DOM (Document Object Model) is like a family tree, in which every HTML element is considered a parent, sibling or child element. For example:</p>
       
       <pre class="code-block">
@@ -57,16 +59,33 @@
           &lt;/head&gt;
 
         &lt;body&gt;
+
           &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
           &lt;p&gt;This is a paragraph.&lt;/p&gt;
           &lt;img src="image.jpg" alt="An image"&gt;
           &lt;button>Click Me&lt;/button&gt;
+
         &lt;/body&gt;
 
         &lt;/html&gt;
-      </code>
-</pre>
+        </code>
+      </pre>
+      <p>The &lt;html&gt; tag is the root of the tree, and it has child elements such as &lt;head&gt; and &lt;body&gt;. Then, the &lt;body&gt; element has other child elements like &lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, and &lt;button&gt;. Each of these elements is a “node” in the DOM.</p>
       <img src="./images/DOM example.png" class="dom-tree-example">
+      <p>Programmers use JavaScript to manipulate those “nodes” inside the DOM, changing their content, modifying their attributes, adding or removing elements dynamically, and responding to user interaction such as clicks or form submissions.</p>
+    
+      <h2>JavaScript HTML and CSS</h2>
+        <h3>What is JavaScript?</h3>
+        <p>JavaScript is a programming language that gives us tools to manipulate the structure and the behaviour of a webpage. It can make the page more dynamic and act the way we want it to behave. For example, we can create a button that changes the size or content of a paragraph. JavaScript also “remembers” things because we can create variables and functions that store information so we can use it as many times as we want.</p>  
+         <div class="test-button1">
+        <button>Click me!</button> 
+        <p>This button doesn't do anything because there is no JavaScript telling it what to do.</p>
+        </div>
+        <div class="test-button2">
+          <button id="countButton">Click me!</button>
+          <p>This button can count!!! => <span id="countDisplay">0</span></p>
+        </div>
+        
     </div>
 
     <div class="links-to-pages">
@@ -76,4 +95,17 @@
       <a href="../index.html">Back to Main page</a>
     </div>
   </body>
+  <script>
+    const countButton = document.getElementById('countButton');
+    const countDisplay = document.getElementById('countDisplay');
+
+    let count = 0;
+
+    function incrementCount(){
+      count++;
+      countDisplay.textContent = count;
+    }
+
+    countButton.addEventListener('click', incrementCount);
+  </script>
 </html>
