@@ -97,6 +97,7 @@ img {
 .blog-menu > ul > li {
   /*creates a space between list items*/
   margin-right: 8px;
+  padding-left: 5px;
 }
 
 /* .subscribe-right {
