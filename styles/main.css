@@ -195,3 +195,12 @@ p {
 .function-list > li {
   padding-bottom: 5px;
 }
+
+#neuroplasticity-link {
+  text-decoration: underline;
+}
+
+#neuroplasticity-link:hover {
+  background-color: black;
+  color: whitesmoke;
+}
