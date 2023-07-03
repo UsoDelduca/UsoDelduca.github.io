@@ -179,6 +179,8 @@ p {
   border-radius: 9px;
   box-shadow: 5px 5px 0 #535050;
   max-width: 800px;
+  text-wrap: wrap;
+  padding: 3px;
 }
 
 .test-button1,
