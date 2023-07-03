@@ -100,6 +100,11 @@ img {
   padding-left: 5px;
 }
 
+.blog-menu > ul > li:hover {
+  /*creates a different style when hovering*/
+  text-decoration: underline;
+}
+
 /* .subscribe-right {
   justify-content: flex-end;
 } */
@@ -114,7 +119,7 @@ img {
   display: flex;
 }
 
-.links-to-pages {
+.footer {
   border-top: solid;
   border-bottom: solid;
   border-color: black;
@@ -122,9 +127,11 @@ img {
   display: flex;
   margin-top: 10px;
   background-color: #f1f1f1;
+  align-items: center;
+  justify-content: center;
 }
 
-.links-to-pages > a {
+/* .links-to-pages > a {
   background-color: #f1f1f1;
 
   margin: 0px;
@@ -133,7 +140,7 @@ img {
   font-size: 16px;
   font-family: fantasy;
   text-decoration: none;
-}
+} */
 
 p,
 h2,
@@ -203,6 +210,17 @@ p {
 }
 
 #neuroplasticity-link:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+}
+/* .post-link {
+  list-style-type: none;
+} */
+.post-link:hover {
   background-color: black;
   color: whitesmoke;
 }
