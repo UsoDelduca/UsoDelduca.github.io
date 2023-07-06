@@ -139,6 +139,12 @@ img {
   display: flex;
 }
 
+.post-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .footer {
   border-top: solid;
   border-bottom: solid;
@@ -237,9 +243,10 @@ p {
 ul {
   list-style-type: none;
 }
-/* .post-link {
-  list-style-type: none;
-} */
+.post-link {
+  margin: 5px;
+  display: flex;
+}
 .post-link:hover {
   background-color: black;
   color: whitesmoke;
