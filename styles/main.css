@@ -261,3 +261,8 @@ table tr th {
   padding: 6px 13px;
   text-align: left;
 }
+
+.post-link-home:hover {
+  background-color: black;
+  color: whitesmoke;
+}
