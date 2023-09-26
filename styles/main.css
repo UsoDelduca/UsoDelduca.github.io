@@ -6,10 +6,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: navajowhite;
   margin: auto;
-  /* margin-left: 5px;
-  margin-right: 5px; */
   padding: 10px;
-  /* min-height: 100vh; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -27,13 +24,9 @@ nav {
   border-color: black;
   height: 50px;
 
-  /* position: absolute; */
-  /* @media (min-width: 600px) {
-    padding: 10px;
-  } */
+ 
 }
 a {
-  /* position: absolute; */
   text-decoration: none;
   color: black;
 }
@@ -45,23 +38,26 @@ a {
   justify-content: space-between;
   margin-left: 5px;
   margin-right: 5px;
+  width: auto;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-/* @media (min-width: 400px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .blog-menu {
-    flex-direction: column;
-  }
-} */
-
-img {
-  width: 15vw;
-  border-radius: 50%;
-  margin-right: 10px;
+.blog-logo {
+  display: flex;
 }
+
+.logo {
+  max-width: 7vw;
+}
+
+.blog-title > h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: fantasy;
+  font-size: 7vw;
+}
+
+
 
 .wellbeing-image {
   width: auto;
@@ -83,23 +79,12 @@ img {
   font-size: smaller;
 }
 
+
 .dom-tree-example {
   width: 100%;
   border-radius: 0;
 }
 
-.blog-title > h1 {
-  font-family: fantasy;
-  font-size: 7vw;
-}
-
-/* .blog-menu {
-  border-top: solid;
-  border-bottom: solid;
-  border-color: black;
-  height: 50px;
-  display: flex;
-} */
 
 .blog-menu > ul {
   /*creates the menu contaier*/
@@ -108,7 +93,6 @@ img {
   padding: 0px;
   font-size: 16px;
   list-style-type: none;
-  /* font-family: fantasy; */
   position: absolute;
   display: flex;
   align-items: center;
@@ -125,18 +109,26 @@ img {
   text-decoration: underline;
 }
 
-/* .subscribe-right {
-  justify-content: flex-end;
-} */
-
 .post-image-1 {
   width: 100px;
   border-radius: 20%;
   margin-right: 10px;
 }
 
-.post-image-cointainer {
+.project-cointainer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-image {
+  max-height: 440px;
 }
 
 .post-list {
@@ -157,16 +149,6 @@ img {
   justify-content: center;
 }
 
-/* .links-to-pages > a {
-  background-color: #f1f1f1;
-
-  margin: 0px;
-  padding: 15px;
-  padding-left: 5px;
-  font-size: 16px;
-  font-family: fantasy;
-  text-decoration: none;
-} */
 
 p,
 h2,
