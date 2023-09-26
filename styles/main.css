@@ -119,16 +119,34 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .project {
+  overflow: scroll;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  
 }
 
 .project-image {
-  max-height: 440px;
+  
+  display: flex;
+  justify-items: center; 
+  max-height: fit-content;
+  margin: 2px;
+  justify-content: space-around;
+}
+
+.project-description {
+  display: flex;
+  width: auto;
+  margin-left: 2px;
+  padding-left: 0;
+  min-height: 200px;
+  align-items: flex-start;
 }
 
 .post-list {
