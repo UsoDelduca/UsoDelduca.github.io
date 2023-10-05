@@ -23,12 +23,21 @@ nav {
   border-bottom: solid;
   border-color: black;
   height: 50px;
-
- 
 }
 a {
   text-decoration: none;
   color: black;
+}
+
+.btn-to-projects {
+  border: solid black;
+  border-radius: 20%;
+  width: fit-content;
+}
+
+.btn-to-projects:hover {
+  background-color: black;
+  color: whitesmoke;
 }
 
 .logo-title-container {
@@ -57,8 +66,6 @@ a {
   font-size: 7vw;
 }
 
-
-
 .wellbeing-image {
   width: auto;
   border-radius: 10%;
@@ -79,12 +86,10 @@ a {
   font-size: smaller;
 }
 
-
 .dom-tree-example {
   width: 100%;
   border-radius: 0;
 }
-
 
 .blog-menu > ul {
   /*creates the menu contaier*/
@@ -128,13 +133,11 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  
 }
 
 .project-image {
-  
   display: flex;
-  justify-items: center; 
+  justify-items: center;
   max-height: fit-content;
   margin: 2px;
   justify-content: space-around;
@@ -166,7 +169,6 @@ a {
   align-items: center;
   justify-content: center;
 }
-
 
 p,
 h2,
